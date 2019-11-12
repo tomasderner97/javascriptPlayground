@@ -1,10 +1,32 @@
 <!DOCTYPE html>
+<!--suppress JSUnresolvedFunction, JSUnresolvedVariable -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>p5.js Playground</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>-->
 </head>
 <body>
-$END$
+
+<script>
+    function setup() {
+        createCanvas(600, 400);
+    }
+
+    function draw() {
+
+        if (mouseIsPressed) {
+            fill(0);
+        } else {
+            fill(255);
+        }
+
+        background(100);
+        ellipse(mouseX, mouseY, 80, 80);
+    }
+</script>
+
 </body>
 </html>
